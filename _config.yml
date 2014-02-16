@@ -2,13 +2,13 @@ title:            lreij
 tagline:          lreij
 description:      lreij's site.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://ruijie.lu
+url:              http://lreij.github.io
 
 # Owner/author information
 owner:
   name:           Ruijie Lu
   avatar:         bio-photo.jpg
-  bio:            "coder. dreamer."
+  bio:            "coder"
   email:          lreij@163.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
