@@ -18,10 +18,10 @@
   {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}
 </div><!-- /.image-wrap -->{% endif %}
 
+<div id="main" role="main">
 <div class="article-author-side">
   {% include _author-bio.html %}
 </div>
-
 <div id="index">
   <h3><a href="{{ site.url}}/posts/">Articles</a></h3>
   {% for post in site.posts limit:5 %}    
@@ -31,6 +31,7 @@
   </article>
   {% endfor %}
 </div><!-- /#index -->
+</div>
 
 <div class="footer-wrap">
   <footer>
