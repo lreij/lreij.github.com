@@ -6,6 +6,4 @@ tagline: lreij, Jerry Lu
 tags: [about, lreij, Jerry Lu]
 ---
 
-#一个悲观主义者
-
-#永远相信美好的事情即将发生！
+我以前写小说从没有象写这一本更感到惶惑过。
