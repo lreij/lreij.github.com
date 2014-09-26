@@ -16,98 +16,24 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#fullpage').fullpage({
-                    autoScrolling: false,
+                    autoScrolling: true,
                     sectionsColor: ['#fff', '#594F4F', '#547980', '#45ADA8', '#FF3D7F', '#A8A7A7', '#F21D41', '#000', '#000'],
                     anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
-                    afterLoad: function(anchorLink, index) {
-                        if (index == 9) {
-                            $('.section9').find('p').delay(300).animate({
-                                left: '0'
-                            },
-                            1500, 'easeOutExpo');
-                        }
-                    },
-                    onLeave: function(index, direction) {
-                        if (index == 9) {
-                            $('.section9').find('p').delay(500).animate({
-                                left: '-120%'
-                            },
-                            1500, 'easeOutExpo');
-                        }
-                    }
                 });
             });
         </script>
         <style>
             .section { text-align: center; font: 3em "Microsoft Yahei"; color: #fff;}
-            .section1 { background: url(static/img/coz.jpeg) 50%;} .section9 p { position:
-            relative; left: -120%;}
+            .section1 { background: url(static/img/1.jpg) 50%;} 
         </style>
     </head>
     
     <body>
         <div id="fullpage">
             <div class="section section1">
-                <h3>
-                    Always believe that
-                </h3>
-                <h1>
-                    something wonderful
-                </h1>
-                <h2>
-                    is about to happen
-                </h2>
-            </div>
-            <div class="section">
-                <h2>
-                    What?
-                </h2>
-            </div>
-            <div class="section">
-                <h2>
-                    Who?
-                </h2>
-            </div>
-            <div class="section">
-                <h2>
-                    When?
-                </h2>
-            </div>
-            <div class="section">
-                <h2>
-                    Where?
-                </h2>
-            </div>
-            <div class="section">
-                <h2>
-                    How?
-                </h2>
-            </div>
-            <div class="section">
-                <h2>
-                    Why?
-                </h2>
-            </div>
-            <div class="section">
-                <h2>
-                    You
-                    <em>
-                        DO
-                    </em>
-                    what you
-                    <em>
-                        WANT
-                    </em>
-                    !
-                </h2>
-            </div>
-            <div class="section section9">
-                <h1>
-                    :-)
-                </h1>
-                <p>
-                    @lreij
-                </p>
+                <h4>
+                「谦卑而执着，羞涩而无畏」
+                </h4>
             </div>
         </div>
     </body>
