@@ -1,41 +1,22 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-    
-    <head>
-        <meta charset="utf-8">
-        <title>
-            Ruijie Lu
-        </title>
-        <link rel="stylesheet" href="static/css/jquery.fullPage.css">
-        <script src="static/js/jquery-1.9.1.min.js">
-        </script>
-        <script src="static/js/jquery-ui.min.js">
-        </script>
-        <script src="static/js/jquery.fullPage.min.js">
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#fullpage').fullpage({
-                    autoScrolling: true,
-                    sectionsColor: ['#fff', '#594F4F', '#547980', '#45ADA8', '#FF3D7F', '#A8A7A7', '#F21D41', '#000', '#000'],
-                    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
-                });
-            });
-        </script>
-        <style>
-            .section { text-align: center; font: 3em "Microsoft Yahei"; color: #fff;}
-            .section1 { background: url(static/img/1.jpg) 50%;} 
-        </style>
-    </head>
-    
-    <body>
-        <div id="fullpage">
-            <div class="section section1">
-                <h4>
-                「谦卑而执着，羞涩而无畏」
-                </h4>
-            </div>
-        </div>
-    </body>
+---
+layout: default
+---
 
-</html>
+<section>
+	<ul>
+
+		{% for post in site.posts %}
+
+		<li>
+			<div class="post-date">
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
+		</li>
+
+		{% endfor %}
+
+	</ul>
+</section>
